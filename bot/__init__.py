@@ -78,7 +78,7 @@ LOCAL = __import__(name = 'bot.locals.' + CONFIG.LOCAL, fromlist = ['LOCAL']).LO
 
 COMMAND = Config({
     'START' : 'start',
-    'PASSWORD' : 'pass',
+    'PASSWORD' : 'senha',
     'HELP' : 'help',
     'LEECH' : 'leech',
     'CANCEL_LEECH' : 'cancel',
