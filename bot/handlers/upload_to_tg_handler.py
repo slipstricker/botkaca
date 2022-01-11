@@ -41,7 +41,7 @@ async def func(filepath: str, client: Client,  message: Message, delete=False):
     video = ['.mp4','.mkv','.avi','.webm','.wmv','.mov']
     photo = ['.jpg','.jpeg','.png']
 
-    file_ext = os_path.splitext(filepath)[1].lower()
+    file_ext = os_path.splitext(filepath, "test")[1].lower()
     LOGGER.debug(f'Uploading : {filepath}')
 
     if STATUS.UPLOAD_AS_DOC:
