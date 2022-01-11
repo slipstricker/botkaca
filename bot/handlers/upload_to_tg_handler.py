@@ -113,7 +113,7 @@ async def func(filepath: str, client: Client,  message: Message, delete=False):
                 message,
                 info
             ),
-            caption=f'<code>{file.name}</code>'
+            caption=f'@BoxMidia - <code>{file.name}</code>'
         )            
         LOGGER.debug(f'Uploaded : {file.name}')
     if delete:
