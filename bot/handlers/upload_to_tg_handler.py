@@ -20,7 +20,7 @@ async def func(filepath: str, client: Client,  message: Message, delete=False):
         LOGGER.error(f'File not found : {filepath}')
         await message.edit_text(
             LOCAL.UPLOAD_FAILED_FILE_MISSING.format(
-                name = os_path.basename(filepath)
+                name = os_path.basename(filepath,'test')
             )
         )
         return
